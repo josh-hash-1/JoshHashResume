@@ -1,0 +1,297 @@
+/* Existing styles from your previous labs... */
+
+/* Interactive Page Specific Styles */
+
+/* Animation setup classes */
+.animate-fade {
+  opacity: 0;
+}
+
+.animate-slide {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+.stagger-item {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Layout and structure */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.section {
+  padding: 1.5rem 0;
+  border-top: 1px solid #eee;
+  margin-bottom: 1rem;
+}
+
+.section:first-of-type {
+  border-top: none;
+}
+
+/* Navigation styling */
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-list a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Interactive elements */
+.button-row,
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Form elements */
+input,
+button {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input {
+  min-width: 200px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 120px;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Interactive feature elements */
+#color-box {
+  width: 200px;
+  height: 200px;
+  background: lightblue;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+#hover-target {
+  padding: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  text-align: center;
+}
+
+/* Text styling */
+.muted {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.result-text {
+  color: #555;
+  font-weight: 500;
+  margin: 0;
+  min-height: 1.2em;
+}
+
+.counter-text {
+  font-weight: 600;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.countdown-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin: 0;
+}
+
+/* Lists */
+.animated-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 1rem 0;
+}
+
+.animated-list li {
+  padding: 0.5rem;
+  margin: 0.25rem 0;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  border-left: 3px solid #007bff;
+}
+
+.skill-item,
+.todo-item,
+.project-item {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Tables */
+.table-container {
+  margin: 1rem 0;
+}
+
+.table-container table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 400px;
+}
+
+.table-container td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.table-container td:first-child {
+  background-color: #f8f9fa;
+}
+
+/* Todo list specific */
+.todo-container {
+  max-width: 500px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  border-left: 3px solid #28a745;
+}
+
+.todo-item button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  min-width: auto;
+}
+
+.todo-item button:hover {
+  background-color: #c82333;
+}
+
+/* Dark theme support */
+.dark {
+  background-color: #111;
+  color: #f7f7f7;
+  transition: all 0.3s ease;
+}
+
+.dark .section {
+  border-top-color: #333;
+}
+
+.dark input {
+  background-color: #333;
+  color: #f7f7f7;
+  border-color: #555;
+}
+
+.dark .animated-list li {
+  background-color: #222;
+  color: #f7f7f7;
+}
+
+.dark .todo-item {
+  background-color: #222;
+  color: #f7f7f7;
+}
+
+.dark #hover-target {
+  background-color: #222;
+  border-color: #555;
+  color: #f7f7f7;
+}
+
+.dark .table-container td {
+  border-color: #555;
+  background-color: #222;
+  color: #f7f7f7;
+}
+
+.dark .table-container td:first-child {
+  background-color: #333;
+}
+
+/* Special effects */
+.highlight {
+  outline: 3px dashed orange;
+  outline-offset: 2px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .button-row,
+  .input-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .nav-list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  input {
+    min-width: auto;
+    width: 100%;
+  }
+  
+  #color-box {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+  }
+}

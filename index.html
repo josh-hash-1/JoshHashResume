@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Josh Hash" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    
+    <title>Portfolio Josh Hash</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Josh Hash
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flexbox-projects.html">Projects</a></li>
+                <li><a href="grid-gallery.html">Gallery</a></li>
+                <li><a href="bootstrap-resume.html">Resume</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#school-life">School Life</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li style="float: right"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section id="about-me">
+    <h2>
+        About Me
+    </h2>
+    <p>
+        I am <em>Josh Hash</em> a student at Algonquin College in the Computer Engineering-Computer Science program. I am from a
+        small town 40 minutes from Ottawa named Embrun, I grew up in this little town, lived and went to school there until
+        the age of 15 when I moved to Ottawa.
+    </p>    
+    <p>
+        I grew up playing sports, I played hockey, volley ball, soccer, football, mountain biking and many other sports. I grew up with parents who loved sports
+        , they often were my coaches or trainer's when I was younger, they would also tell me 
+        <blockquote>
+            Life is too short to wonder "what if"—try everything and discover what makes you come alive. 
+        </blockquote> 
+        <p>
+        The sport I played the most when I was younger was hockey I mostly played house league in my home town 
+        <strong>
+            winning many tournaments and a few final series over the years
+        </strong>
+        , on the side I would also be the substitute player for the competitive teams around Embrun.
+        </p>
+    </p>
+</section>
+
+<section id="school-life">
+    <article>
+        <h2>
+            My Education
+        </h2>
+        <p>
+            I started school in my hometown of Embrun, I stayed there until the end of nineth grade when I moved to Ottawa going to a trade school who started experimenting
+            with a new program in gaming. I originaly was appart of theyre <abbr title="Electronic Sports">esports</abbr> teams participating in tournaments around Canada, as time went on I left the teams and
+            started practicing Sim Racing, I was able to join a tournament in Montreal during my last year of high school. I starting switching my later gaming classes 
+            to programming and science classes around the 11th grade. I graduated from high school with my billingual degree in 2024.
+        </p>
+        <table border="1">
+            <caption>
+                Education Timeline
+            </caption>
+            <tr>
+                <th>School</th>
+                <th>Year Graduated</th>
+            </tr>
+            <tr>
+                <td>ESCI</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>Algonquin</td>
+                <td>Currently Enrolled</td>
+            </tr>
+        </table>
+    </article>
+</section>
+
+<section id="work-experience">
+    <h2>Work Experience</h2>
+    <ol>
+        <li>Metro</li>
+        <aside>
+            I work in customer service at Metro helping customer's have a good experience at the store.
+        </aside>
+        <li>Frecon General Labour</li>
+        <aside>
+            I worked at Frecon as a student for the summer helping with site preperation.
+        </aside>
+        <li>Calypso</li>
+        <aside>
+            I worked at calypso for a summer as a cook at theyre buffet.
+        </aside>
+        <li>Zack's Dinner</li>
+        <aside>
+            I worked at Zack's Dinner helping with kitchen prep and dishes.
+        </aside>
+    </ol>
+</section>
+
+<section id="hobbies">
+    <h2>Hobbies and Interests</h2>
+    <ul>
+        <li>Freestyle Skiing</li>
+        <aside>I started skiing at the age of 6 and recently also learned to snowboard.</aside>
+        <div class="video-container">
+            <video controls width="320" height="180">
+                <source src="Backflip.mp4" type="video/mp4">
+            </video>
+            <video controls width="320" height="180">
+                <source src="Snowboard.mp4" type="video/mp4">
+            </video>
+        </div>
+        <li>F1</li>
+        <aside>I have from a young age loved watching F1 with my dad</aside>
+        <img width="180" height="360" src="F1.PNG">
+        <li>
+            Cars
+        </li>
+        <aside>
+            I like to work on cars I have had the chance to work on a few cars over the year and most recently a BMW X5, this car had many sensor issues and engine 
+            issues.
+        </aside>
+        <img width="480" height="360" src="BMWWork.png" class="bright-image">
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>
+    Contact
+    </h2>
+    <form action="/submit" method="post">
+        <!-- Name -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+      
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+      
+        <!-- Phone -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890"><br><br>
+      
+        <!-- Preferred Contact Method -->
+        <p>Preferred Contact Method:</p>
+        <label><input type="radio" name="contact_method" value="email" checked> Email</label><br>
+        <label><input type="radio" name="contact_method" value="phone"> Phone</label><br><br>
+        
+        <!-- Reason of Contact -->
+        <label for="reason">Reason for Contact:</label><br>
+        <select id="reason" name="reason" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="job">Job Opportunity</option>
+          <option value="collaboration">Collaboration</option>
+          <option value="inquiry">General Inquiry</option>
+        </select><br><br>
+        
+        <!-- Message -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+      
+        <!-- Submit Button -->
+        <div class="button-container">
+            <button type="submit">Send</button>
+        </div>
+    </form>      
+</section>
+
+<footer>
+    <p>&copy; 2025 Josh Hash. All rights reserved.</p>
+
+    <nav>
+        
+        <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#school-life">School Life</a></li>
+          <li><a href="#work-experience">Work Experience</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#top">Back to Top</a></li>
+        </ul>
+    </nav>
+
+    <p class="connect">
+      Connect with me:
+      <p class="links">
+       <a href="mailto:hash0191@algonquinlive.com">Email</a> |  
+      <a href="https://github.com/josh-hash-1" target="_blank">GitHub</a> 
+      </p>  
+      
+    </p>
+</footer>
+</body>
+</html>

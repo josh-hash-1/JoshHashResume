@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="interactive.css" rel="interactive">
+    <link href="Style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js">
+
+    </script>
+    <title>Interactive features</title>
+</head>
+<body>
+        <header>
+            <h1>
+                Josh Hash
+            </h1>
+            <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flexbox-projects.html">Projects</a></li>
+                <li><a href="grid-gallery.html">Gallery</a></li>
+                <li><a href="bootstrap-resume.html">Resume</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#school-life">School Life</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li style="float: right"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <main class="container">
+    <h2 class="animate-fade">Interactive Features</h2>
+
+    <!-- Step 1 & 2: Welcome + Current Time -->
+    <section class="section stagger-item" id="welcome-section">
+      <h3>Welcome & Basic Interactions</h3>
+      <div id="welcome-message" class="muted">Welcome message will appear here.</div>
+      <div id="current-time" class="muted">Time will appear here.</div>
+      <div class="button-row">
+        <button id="greet-btn" class="animate-fade">Click to Greet Me</button>
+        <button id="change-color-btn" class="animate-fade">Change Background Color</button>
+        <button id="theme-toggle" class="animate-fade">Toggle Theme</button>
+      </div>
+      <div id="color-box" aria-label="Color Box"></div>
+    </section>
+
+    <section class="section stagger-item" id="interaction-section">
+      <h3>Click & Hover Interactions</h3>
+      <div class="button-row">
+        <button id="click-counter-btn">Click Me!</button>
+        <p id="click-count">Clicks: 0</p>
+      </div>
+      <div class="button-row">
+        <div id="hover-target">Hover over this box</div>
+        <p id="hover-status" class="muted">Hover status will appear here.</p>
+      </div>
+    </section>
+
+    <section class="section stagger-item" id="conditionals-section">
+      <h3>Smart Decisions (Conditionals)</h3>
+      <div class="input-group">
+        <button id="time-greeting-btn">Check Time Greeting</button>
+        <p id="time-greeting" class="result-text">Greeting will appear here.</p>
+      </div>
+
+      <div class="input-group">
+        <input type="number" id="age-input" placeholder="Enter your age" />
+        <button id="check-age-btn">Check Age Category</button>
+        <p id="age-result" class="result-text"></p>
+      </div>
+
+      <div class="input-group">
+        <input type="number" id="grade-input" placeholder="Enter grade (0-100)" />
+        <button id="check-grade-btn">Check Letter Grade</button>
+        <p id="grade-result" class="result-text"></p>
+      </div>
+
+      <div class="input-group">
+        <input type="number" id="even-odd-input" placeholder="Enter a number" />
+        <button id="even-odd-btn">Even or Odd?</button>
+        <p id="even-odd-result" class="result-text"></p>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="password-input" placeholder="Enter password" />
+        <button id="password-check-btn">Check Password Strength</button>
+        <p id="password-strength" class="result-text"></p>
+      </div>
+    </section>
+
+    <section class="section stagger-item" id="loops-section">
+      <h3>Loops & Iteration</h3>
+      <div class="input-group">
+        <button id="show-skills-btn">Show My Skills</button>
+      </div>
+      <ul id="skills-list" class="animated-list"></ul>
+
+      <div class="input-group">
+        <input type="number" id="times-table-input" placeholder="Enter a number (1-12)" />
+        <button id="generate-table-btn">Generate Times Table</button>
+      </div>
+      <div id="times-table-result" class="table-container"></div>
+
+      <div class="input-group">
+        <button id="countdown-btn">Start 5s Countdown</button>
+        <p id="countdown-display" class="countdown-text"></p>
+      </div>
+
+      <div class="input-group">
+        <button id="even-list-btn">Generate Even Numbers (1-20)</button>
+      </div>
+      <p id="even-list" class="result-text"></p>
+    </section>
+
+    <section class="section stagger-item" id="arrays-section">
+      <h3>Arrays & Array Methods</h3>
+      <div class="input-group">
+        <input type="text" id="new-skill" placeholder="Enter a new skill" />
+        <button id="add-skill-btn">Add Skill</button>
+      </div>
+      <p id="skills-count" class="counter-text">Total Skills: 0</p>
+      <ul id="skills-display" class="animated-list"></ul>
+
+      <div class="input-group">
+        <input type="text" id="search-skill" placeholder="Search skills" />
+        <button id="search-btn">Search</button>
+      </div>
+      <ul id="search-results" class="animated-list"></ul>
+
+      <div class="input-group">
+        <button id="sort-projects-name">Sort Projects by Name</button>
+        <button id="sort-projects-date">Sort Projects by Date</button>
+      </div>
+      <ul id="projects-list" class="animated-list"></ul>
+
+      <h4>Todo List</h4>
+      <div class="input-group">
+        <input type="text" id="todo-input" placeholder="Add todo item" />
+        <button id="todo-add-btn">Add</button>
+      </div>
+      <div id="todo-list" class="todo-container"></div>
+    </section>
+
+    <footer>
+    <p>&copy; 2025 Josh Hash | <a href="mailto:hash0191@algonquinlive.com">Email</a> | 
+      <a href="https://github.com/josh-hash-1" target="_blank">GitHub</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

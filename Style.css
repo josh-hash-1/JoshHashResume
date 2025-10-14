@@ -1,0 +1,238 @@
+/* General */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f7f9f9;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1 {
+    color: #3F72AF;
+    text-align: center;
+    font-family: monaco;
+}
+
+/* Nav Bar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 2;
+    overflow: hidden;
+    background-color: #dae3f5;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    display: block;
+    color: #3F72AF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #112D4E;
+    color: #b7cae1;
+}
+
+/* About me to education board */
+h2 {
+    text-align: center;
+    color: #3F72AF;
+    font-family: monaco;
+}
+p {
+    color: #5b6069;
+}
+em, blockquote, strong {
+    color: #484d57;
+}
+
+/* Table */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 70%;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #EEEFE0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+caption {
+    caption-side: top;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #3F72AF;
+    margin-bottom: 10px;
+}
+th, td {
+    padding: 12px 20px;
+    text-align: center;
+}
+thead {
+    background-color: #3F72AF;
+    color: white;
+}
+tbody tr:nth-child(even) {
+    background-color: #D1D8BE;
+}
+tbody tr:nth-child(odd) {
+    background-color: #A7C1A8;
+}
+tbody tr:hover {
+    background-color: #819A91;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+thead tr:hover {
+    background-color: inherit;
+    color: inherit;
+}
+th {
+    border-bottom: 2px solid #819A91;
+}
+
+/* Work experience */
+#work-experience aside {
+    color: #3F72AF;
+    font-family: monaco;
+    text-align: center;
+    font-size: medium;
+}
+#work-experience li {
+    color: #264061;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    list-style: none;
+    line-height: 3;
+    font-size: larger;
+}
+
+/* Hobbies and interests */
+#hobbies li {
+    text-align: center;
+    list-style: none;
+    font-family: 'Trebuchet MS';
+    color: #264061;
+    font-size: larger;
+    line-height: 3;
+}
+#hobbies aside {
+    text-align: center;
+    font-family: monaco;
+    color: #3F72AF;
+    padding-left: 10px;
+}
+.video-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Contact form */
+form {
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Trebuchet MS', sans-serif;
+}
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #264061;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #3F72AF;
+    outline: none;
+}
+form textarea {
+    resize: vertical;
+}
+form button {
+    background-color: #3F72AF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 20px auto 0 auto;
+    transition: background-color 0.3s ease;
+}
+.button-container {
+    text-align: center;
+}
+form button:hover {
+    background-color: #264061;
+}
+form p {
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    background: #112D4E;
+    text-align: center;
+    padding-top: 1px;
+}
+footer p {
+    color: whitesmoke;
+    font-family: monaco;
+    font-size: small;
+}
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+footer nav ul li a {
+    text-decoration: none;
+    color: #3F72AF;
+    transition: color 0.3s ease, border-bottom 0.3s ease, background-color 0.3s ease;
+}
+footer nav ul li a:hover {
+    color: #b7cae1;
+    border: solid #b7cae1;
+}
+
+/* Connect with me */
+.links {
+    padding-bottom: 10px;
+}
+.links a {
+    color: #8AB6D6;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-decoration: wavy;
+}
+.links a:hover {
+    color: #D0E4F7;
+}

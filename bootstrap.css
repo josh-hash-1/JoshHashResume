@@ -1,0 +1,51 @@
+    body {
+      background-color: #F9F7F7;
+      color: #222;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 1.5em 0;
+    }
+
+    .nav-link {
+      color: #fff !important;
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      color: #90EE90 !important;
+    }
+
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      border-bottom: 3px solid #90EE90;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+      border-top: 3px solid #90EE90;
+    }
+
+    a {
+      color: #90EE90;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #fff;
+    }
